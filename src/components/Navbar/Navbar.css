@@ -54,3 +54,23 @@
   font-size: 10px;
   background: var(--color-surface);
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar__links {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar__links {
+    display: none;
+  }
+}

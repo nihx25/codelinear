@@ -1,0 +1,19 @@
+.home {
+  background: var(--color-page-bg);
+  min-height: 100vh;
+  padding: var(--page-padding);
+  color: var(--color-text-primary);
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    padding: 16px;
+  }
+}
