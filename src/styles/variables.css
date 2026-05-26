@@ -16,5 +16,9 @@
   --radius-lg: 12px;
 
   /* Page */
-  --page-padding: 25px;
+  --page-padding: 50px;
+  --color-page-bg: #000D12;
+
+  /* Hero */
+  --gradient-hero-image: linear-gradient(103.43deg, #00B4FD -1.02%, #003ACE 83.53%);
 }
