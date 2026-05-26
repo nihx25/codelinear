@@ -1,0 +1,56 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 716.46px;
+  height: 47px;
+  margin: 0 auto;
+  border-radius: var(--radius-lg);
+  padding: 9px 10px;
+  background: var(--color-surface);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-sizing: border-box;
+}
+
+.navbar__logo {
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 32px;
+  flex: 1;
+  justify-content: center;
+}
+
+.navbar__link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+}
+
+.navbar__dropdown-icon {
+  width: 14px;
+  height: 14px;
+}
+
+.navbar .btn--secondary {
+  width: 161px;
+  height: 26px;
+  border-radius: var(--radius-sm);
+  padding: 5px 37px;
+  font-size: 10px;
+  background: var(--color-surface);
+}

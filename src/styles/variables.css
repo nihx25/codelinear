@@ -1,0 +1,20 @@
+:root {
+  /* Colors */
+  --color-primary-start: #00B4FD;
+  --color-primary-end: #003ACE;
+  --color-surface: #2F2F2FB2;
+  --color-border: #E9F4F9;
+  --color-text-primary: #E9F4F9;
+  --color-white: #ffffff;
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(106.53deg, var(--color-primary-start) -5.68%, var(--color-primary-end) 86.98%);
+
+  /* Border radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+
+  /* Page */
+  --page-padding: 25px;
+}
