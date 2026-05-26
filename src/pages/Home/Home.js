@@ -1,6 +1,9 @@
 import Navbar from '../../components/Navbar';
 import HeroSection from '../../components/HeroSection';
 import FeaturesSection from '../../components/FeaturesSection';
+import ProductSection from '../../components/ProductSection';
+import CoreBankingSection from '../../components/CoreBankingSection';
+import CtaBanner from '../../components/CtaBanner';
 import './Home.css';
 
 const Home = () => {
@@ -9,6 +12,9 @@ const Home = () => {
       <Navbar />
       <HeroSection />
       <FeaturesSection />
+      <ProductSection />
+      <CoreBankingSection />
+      <CtaBanner />
     </div>
   );
 };
