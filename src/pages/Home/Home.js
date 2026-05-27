@@ -3,6 +3,7 @@ import HeroSection from '../../components/HeroSection';
 import FeaturesSection from '../../components/FeaturesSection';
 import ProductSection from '../../components/ProductSection';
 import CoreBankingSection from '../../components/CoreBankingSection';
+import MobileShowcaseSection from '../../components/MobileShowcaseSection';
 import CtaBanner from '../../components/CtaBanner';
 import './Home.css';
 
@@ -15,6 +16,7 @@ const Home = () => {
       <ProductSection />
       <CoreBankingSection />
       <CtaBanner />
+      <MobileShowcaseSection />
     </div>
   );
 };

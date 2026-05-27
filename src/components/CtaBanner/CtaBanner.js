@@ -9,9 +9,10 @@ const CtaBanner = ({
   secondaryLabel = 'Contact Us',
   onPrimaryClick,
   onSecondaryClick,
+  watermarkSrc = cb7Image,
 }) => (
   <div className="cta-banner">
-    <img src={cb7Image} alt="" className="cta-banner__watermark" aria-hidden="true" />
+    <img src={watermarkSrc} alt="" className="cta-banner__watermark" aria-hidden="true" />
     <div className="cta-banner__left">
       <h2 className="cta-banner__heading">{heading}</h2>
       <p className="cta-banner__subtitle">{subtitle}</p>
