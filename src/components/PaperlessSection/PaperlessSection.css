@@ -1,0 +1,81 @@
+.paperless {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 80px;
+  background: var(--color-page-bg);
+}
+
+.paperless__left {
+  flex: 0 0 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.paperless__heading {
+  font-size: 53px;
+  font-weight: 400;
+  color: var(--color-text-primary);
+  margin: 0;
+  line-height: 1.1;
+}
+
+.paperless__subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-text-primary);
+  opacity: 0.6;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.paperless__right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+@media (max-width: 1024px) {
+  .paperless {
+    padding: 80px 48px;
+  }
+
+  .paperless__heading {
+    font-size: 42px;
+  }
+
+  .paperless__left {
+    flex: 0 0 52%;
+  }
+}
+
+@media (max-width: 768px) {
+  .paperless {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 56px 24px;
+    gap: 48px;
+  }
+
+  .paperless__left {
+    flex: unset;
+    width: 100%;
+  }
+
+  .paperless__heading {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .paperless__right {
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .paperless__right .btn {
+    width: 100%;
+  }
+}
