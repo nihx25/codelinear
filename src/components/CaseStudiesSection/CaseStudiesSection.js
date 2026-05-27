@@ -5,7 +5,6 @@ import leftIcon from '../../assets/icons/leftIcon.svg';
 import rightIcon from '../../assets/icons/right.svg';
 import './CaseStudiesSection.css';
 
-const SIDE = 160;
 const GAP = 20;
 
 const caseStudies = [
@@ -62,9 +61,11 @@ const CaseStudiesSection = () => {
     return () => ro.disconnect();
   }, []);
 
-  const cardWidth = Math.max(400, containerWidth - 2 * SIDE - GAP);
-  // leading spacer puts card 0 at x=SIDE, so translate is unchanged
-  const translate = activeIndex * (cardWidth + GAP);
+  // peek size: 160px desktop, 24px mobile
+  const sideGap = containerWidth < 600 ? 24 : 160;
+  const cardWidth = Math.max(0, containerWidth - 2 * sideGap - GAP);
+  // center active card: offset = (containerWidth - cardWidth) / 2 - activeIndex * step
+  const offset = (containerWidth - cardWidth) / 2 - activeIndex * (cardWidth + GAP);
 
   const prev = () => setActiveIndex(i => Math.max(0, i - 1));
   const next = () => setActiveIndex(i => Math.min(caseStudies.length - 1, i + 1));
@@ -76,11 +77,8 @@ const CaseStudiesSection = () => {
       <div className="case-studies__carousel" ref={containerRef}>
         <div
           className="case-studies__track"
-          style={{ transform: `translateX(-${translate}px)` }}
+          style={{ transform: `translateX(${offset}px)` }}
         >
-          {/* leading spacer so card 0 starts at SIDE and prev card peeks left */}
-          <div style={{ width: SIDE, flexShrink: 0 }} />
-
           {caseStudies.map((cs, i) => (
             <div
               key={cs.id}
