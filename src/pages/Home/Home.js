@@ -5,6 +5,10 @@ import ProductSection from '../../components/ProductSection';
 import CoreBankingSection from '../../components/CoreBankingSection';
 import MobileShowcaseSection from '../../components/MobileShowcaseSection';
 import CtaBanner from '../../components/CtaBanner';
+import InsightsSection from '../../components/InsightsSection';
+import CaseStudiesSection from '../../components/CaseStudiesSection';
+import PaperlessSection from '../../components/PaperlessSection';
+import FooterSection from '../../components/FooterSection';
 import './Home.css';
 
 const Home = () => {
@@ -17,6 +21,10 @@ const Home = () => {
       <CoreBankingSection />
       <CtaBanner />
       <MobileShowcaseSection />
+      <InsightsSection />
+      <CaseStudiesSection />
+      <PaperlessSection />
+      <FooterSection />
     </div>
   );
 };

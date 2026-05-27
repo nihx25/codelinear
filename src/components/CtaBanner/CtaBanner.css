@@ -64,7 +64,26 @@
   position: relative;
   z-index: 1;
   display: flex;
-  gap: 20px;
+  gap: 40px;
+}
+
+/* ── Small desktop ──────────────────────────────────── */
+@media (max-width: 1024px) {
+  .cta-banner {
+    padding: 48px 48px;
+  }
+
+  .cta-banner__heading {
+    font-size: 42px;
+  }
+
+  .cta-banner__left {
+    flex: 0 0 50%;
+  }
+
+  .cta-banner__right {
+    flex: 0 0 44%;
+  }
 }
 
 /* ── Tablet ─────────────────────────────────────────── */
